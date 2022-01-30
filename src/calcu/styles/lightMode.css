@@ -1,0 +1,51 @@
+.primary-color{
+    -fx-background-color: linear-gradient(to right, #74ebd5, #acb6e5);
+
+}
+.buttons{
+    -fx-background-color: white;
+    -fx-text-fill: Gray;
+}
+
+.buttons : hover{
+        -fx-scale-y: 1.1;
+}
+
+.operators{
+    -fx-background-color:  #e2eff1;
+    -fx-text-fill: Gray;
+}
+
+.specialKeys{
+    -fx-background-color: #efd8f4;
+    -fx-text-fill: Gray;
+
+}
+
+.topField{
+    -fx-background-color: white, white;
+    -fx-control-inner-background: white, white;
+    -fx-text-fill: Gray;
+    -fx-text-box-border: none;
+    -fx-border-style: none;
+    -fx-border-color: white;
+}
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+
+}
+
+.text-area:focused .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+    -fx-highlight-fill: #7ecfff;
+}
+
+.text-area .content {
+    -fx-padding: 10px;
+    -fx-text-fill: gray;
+    -fx-highlight-fill: #7ecfff;
+}

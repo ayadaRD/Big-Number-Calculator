@@ -1,0 +1,46 @@
+.primary-color{
+    -fx-background-color: linear-gradient(to right, #232526, #414345);
+
+}
+
+.buttons{
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.7) , 20,0,0,0 );
+}
+
+.buttons : hover{
+        -fx-scale-y: 1.1;
+}
+
+.operators{
+    -fx-background-color: #404040;
+    -fx-text-fill: white;
+    -fx-effect: innershadow( gaussian , black , 20,0,0,0 );
+
+}
+
+
+.specialKeys{
+    -fx-background-color: lightGray;
+    -fx-text-fill: Gray;
+
+}
+
+
+.topField{
+    -fx-background-color: lightGray, lightGray;
+    -fx-control-inner-background: lightGray, lightGray;
+    -fx-text-fill: Gray;
+    -fx-focus-color: lightGray;
+    -fx-text-box-border: none;
+    -fx-border-color: lightGray;
+    -fx-border-style: none;
+}
+
+
+
+.text-area .content {
+    -fx-background-color: lightGray, transparent, lightGray, transparent;
+}
+

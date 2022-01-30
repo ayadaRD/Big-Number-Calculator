@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="557.0" styleClass="primary-color" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calcu.controller.integralController">
+   <children>
+      <Pane layoutX="-4.0" layoutY="304.0" prefHeight="582.0" prefWidth="565.0" style="-fx-background-radius: 150;" styleClass="buttons">
+         <effect>
+            <DropShadow color="#000000bc" height="64.54" radius="28.660000000000004" width="52.1" />
+         </effect>
+         <children>
+            <Separator layoutX="181.0" layoutY="14.0" prefHeight="16.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-background-radius: 50;" />
+         </children></Pane>
+      <Label layoutX="-7.0" layoutY="-62.0" prefHeight="364.0" prefWidth="135.0" style="-fx-font-size: 250px;" text="∫" textFill="#515151">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lowB" layoutX="74.0" layoutY="206.0" prefHeight="48.0" prefWidth="225.0" promptText="LOWER BOUND" style="-fx-background-color: white;">
+         <effect>
+            <InnerShadow color="#00000065" />
+         </effect></TextField>
+      <TextField fx:id="upB" layoutX="90.0" layoutY="48.0" prefHeight="48.0" prefWidth="225.0" promptText="UPPER BOUND" style="-fx-background-color: white;">
+         <effect>
+            <InnerShadow color="#00000089" />
+         </effect></TextField>
+      <Label fx:id="l0" layoutX="103.0" layoutY="382.0" prefHeight="40.0" prefWidth="88.0" text="x^0 +" visible="false">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="l1" layoutX="222.0" layoutY="385.0" text="x^1 +" visible="false">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="l4" layoutX="97.0" layoutY="481.0" text="x^4 + " visible="false">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="l2" layoutX="342.0" layoutY="385.0" text="x^2 +" visible="false">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="l3" layoutX="465.0" layoutY="385.0" text="x^3 +" visible="false">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="l5" layoutX="222.0" layoutY="481.0" text="x^5 +" visible="false">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="l6" layoutX="342.0" layoutY="481.0" text="x^6 +" visible="false">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="l7" layoutX="462.0" layoutY="481.0" text="x^7 +" visible="false">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="l8" layoutX="100.0" layoutY="567.0" text="x^8 +" visible="false">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="l9" layoutX="218.0" layoutY="566.0" text="x^9 + " visible="false">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f0" layoutX="46.0" layoutY="382.0" onAction="#on0DegreeClick" prefHeight="40.0" prefWidth="48.0" text="0" visible="false" />
+      <TextField fx:id="f7" layoutX="405.0" layoutY="478.0" onAction="#on7DegreeClick" prefHeight="40.0" prefWidth="48.0" text="0" visible="false" />
+      <TextField fx:id="f6" layoutX="285.0" layoutY="478.0" onAction="#on6DegreeClick" prefHeight="40.0" prefWidth="48.0" text="0" visible="false" />
+      <TextField fx:id="f4" layoutX="46.0" layoutY="478.0" onAction="#on4DegreeClick" prefHeight="40.0" prefWidth="48.0" text="0" visible="false" />
+      <TextField fx:id="f10" layoutX="285.0" layoutY="563.0" onAction="#on10DegreeClick" prefHeight="40.0" prefWidth="48.0" text="0" visible="false" />
+      <TextField fx:id="f8" layoutX="46.0" layoutY="564.0" onAction="#on8DegreeClick" prefHeight="40.0" prefWidth="48.0" text="0" visible="false" />
+      <TextField fx:id="f9" layoutX="167.0" layoutY="563.0" onAction="#on9DegreeClick" prefHeight="40.0" prefWidth="48.0" text="0" visible="false" />
+      <TextField fx:id="f5" layoutX="167.0" layoutY="478.0" onAction="#on5DegreeClick" prefHeight="40.0" prefWidth="48.0" text="0" visible="false" />
+      <TextField fx:id="f3" layoutX="405.0" layoutY="382.0" onAction="#on3DegreeClick" prefHeight="40.0" prefWidth="48.0" text="0" visible="false" />
+      <TextField fx:id="f2" layoutX="285.0" layoutY="382.0" onAction="#on2DegreeClick" prefHeight="40.0" prefWidth="48.0" text="0" visible="false" />
+      <TextField fx:id="f1" layoutX="167.0" layoutY="382.0" onAction="#on1DegreeClick" prefHeight="40.0" prefWidth="48.0" text="0" visible="false" />
+      <Label fx:id="l10" layoutX="342.0" layoutY="566.0" text="x^10 " visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="equ" layoutX="70.0" layoutY="640.0" mnemonicParsing="false" onAction="#onFinalClick" prefHeight="72.0" prefWidth="79.0" styleClass="primary-color" text="=" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#838383" height="139.18" radius="34.295" width="0.0" />
+         </effect>
+      </Button>
+      <MenuButton fx:id="maxDegree" alignment="CENTER" graphicTextGap="6.0" layoutX="390.0" layoutY="119.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" opacity="0.84" popupSide="RIGHT" prefHeight="58.0" prefWidth="105.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="degree" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#on0DegreeClick" text="0" />
+          <MenuItem mnemonicParsing="false" onAction="#on1DegreeClick" text="1" />
+            <MenuItem mnemonicParsing="false" onAction="#on2DegreeClick" text="2" />
+            <MenuItem mnemonicParsing="false" onAction="#on3DegreeClick" text="3" />
+            <MenuItem mnemonicParsing="false" onAction="#on4DegreeClick" text="4" />
+            <MenuItem mnemonicParsing="false" onAction="#on5DegreeClick" text="5" />
+            <MenuItem mnemonicParsing="false" onAction="#on6DegreeClick" text="6" />
+            <MenuItem mnemonicParsing="false" onAction="#on7DegreeClick" text="7" />
+            <MenuItem mnemonicParsing="false" onAction="#on8DegreeClick" text="8" />
+            <MenuItem mnemonicParsing="false" onAction="#on9DegreeClick" text="9" />
+            <MenuItem mnemonicParsing="false" onAction="#on10DegreeClick" text="10" />
+        </items>
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#0000003e" />
+         </effect>
+      </MenuButton>
+      <TextField fx:id="resultText" editable="false" layoutX="147.0" layoutY="640.0" prefHeight="72.0" prefWidth="333.0">
+         <effect>
+            <InnerShadow color="#0000009a" height="45.88" radius="10.97" width="0.0" />
+         </effect>
+      </TextField>
+      <Button fx:id="mode" layoutX="463.0" layoutY="21.0" mnemonicParsing="false" onAction="#changeMode" prefHeight="58.0" prefWidth="65.0" style="-fx-background-radius: 100;" styleClass="buttons" text="☽">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

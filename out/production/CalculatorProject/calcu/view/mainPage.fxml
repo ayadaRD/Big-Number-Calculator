@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="694.0" prefWidth="573.0" styleClass="primary-color" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calcu.controller.mainPageController">
+    <children>
+      <Pane fx:id="topCal1" layoutX="-37.0" layoutY="616.0" prefHeight="117.0" prefWidth="165.0" style="-fx-background-radius: 40;" styleClass="specialKeys">
+         <children>
+            <Button fx:id="equals" layoutX="58.0" mnemonicParsing="false" onAction="#onOperatorClick" prefHeight="76.0" prefWidth="104.0" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="specialKeys" text="=" textFill="#787878">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow color="#838080" offsetX="5.0" offsetY="-5.0" />
+         </effect>
+      </Pane>
+        <VBox alignment="CENTER" layoutX="94.0" layoutY="313.0" prefHeight="267.0" prefWidth="64.0" style="-fx-spacing: 20;">
+            <children>
+            <Button mnemonicParsing="false" onAction="#onOperatorClick" prefHeight="140.0" prefWidth="64.0" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="operators" text="X">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#615a5aa0" offsetX="6.0" offsetY="5.0" />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onOperatorClick" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="operators" text="/">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#615a5aa0" offsetX="6.0" offsetY="5.0" />
+               </effect>
+            </Button>
+            <Button fx:id="btn0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="62.0" prefWidth="69.0" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="buttons" text="0" textFill="#787878">
+               <font>
+                  <Font size="31.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#615a5aa0" offsetX="6.0" offsetY="5.0" />
+               </effect>
+            </Button>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" layoutX="471.0" layoutY="311.0" prefHeight="277.0" prefWidth="85.0" style="-fx-spacing: 26;">
+            <children>
+            <Button mnemonicParsing="false" onAction="#onOperatorClick" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="operators" text="+/-">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#0000009f" height="24.88" offsetX="5.0" offsetY="5.0" radius="14.2725" width="34.21" />
+               </effect>
+            </Button>
+            <Button fx:id="integral" mnemonicParsing="false" onAction="#integralClicks" prefHeight="167.0" style="-fx-pref-width: 80; -fx-pref-height: 160; -fx-background-radius: 20;" styleClass="operators" text="∫">
+               <font>
+                  <Font size="39.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#0000009f" height="24.88" offsetX="5.0" offsetY="5.0" radius="14.2725" width="34.21" />
+               </effect>
+            </Button>
+            </children>
+        </VBox>
+        <VBox layoutX="148.0" layoutY="313.0" prefHeight="286.0" prefWidth="336.0" style="-fx-spacing: 0;">
+            <children>
+                <HBox alignment="CENTER" prefHeight="82.0" prefWidth="335.0" style="-fx-spacing: 18;">
+                    <children>
+                  <Button fx:id="btn1" mnemonicParsing="false" onAction="#onNumberClick" style="-fx-pref-width: 85; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="buttons" text="1" textFill="#787878">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#4d4b4b" height="33.44" radius="18.552500000000002" spread="0.12" width="42.77" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btn2" mnemonicParsing="false" onAction="#onNumberClick" style="-fx-pref-width: 85; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="buttons" text="2" textFill="#787878">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#4d4b4b" height="33.44" radius="18.552500000000002" spread="0.12" width="42.77" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btn3" mnemonicParsing="false" onAction="#onNumberClick" style="-fx-pref-width: 85; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="buttons" text="3" textFill="#787878">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#4d4b4b" height="33.44" radius="18.552500000000002" spread="0.12" width="42.77" />
+                     </effect>
+                  </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="104.0" prefWidth="335.0" style="-fx-spacing: 18;">
+                    <children>
+                  <Button fx:id="btn4" mnemonicParsing="false" onAction="#onNumberClick" style="-fx-pref-width: 85; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="buttons" text="4" textFill="#787878">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#4d4b4b" height="33.44" radius="18.552500000000002" spread="0.12" width="42.77" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btn5" mnemonicParsing="false" onAction="#onNumberClick" style="-fx-pref-width: 85; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="buttons" text="5" textFill="#787878">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#4d4b4b" height="33.44" radius="18.552500000000002" spread="0.12" width="42.77" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btn6" mnemonicParsing="false" onAction="#onNumberClick" style="-fx-pref-width: 85; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="buttons" text="6" textFill="#787878">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#4d4b4b" height="33.44" radius="18.552500000000002" spread="0.12" width="42.77" />
+                     </effect>
+                  </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="86.0" prefWidth="335.0" style="-fx-spacing: 18;">
+               <children>
+                  <Button fx:id="btn7" mnemonicParsing="false" onAction="#onNumberClick" style="-fx-pref-width: 85; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="buttons" text="7" textFill="#787878">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#4d4b4b" height="33.44" radius="18.552500000000002" spread="0.12" width="42.77" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btn8" mnemonicParsing="false" onAction="#onNumberClick" style="-fx-pref-width: 85; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="buttons" text="8" textFill="#787878">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#4d4b4b" height="33.44" radius="18.552500000000002" spread="0.12" width="42.77" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btn9" mnemonicParsing="false" onAction="#onNumberClick" style="-fx-pref-width: 85; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="buttons" text="9" textFill="#787878">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#4d4b4b" height="33.44" radius="18.552500000000002" spread="0.12" width="42.77" />
+                     </effect>
+                  </Button>
+               </children>
+                </HBox>
+            </children>
+        </VBox>
+      <HBox layoutX="11.0" layoutY="236.0" prefHeight="61.0" prefWidth="549.0" style="-fx-spacing: 12;">
+         <children>
+            <Button fx:id="mode" mnemonicParsing="false" onAction="#changeMode" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="operators" text="☽">
+               <effect>
+                  <DropShadow color="#545454" height="42.77" offsetX="6.0" offsetY="6.0" radius="19.33" width="36.55" />
+               </effect>
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onOperatorClick" prefHeight="55.0" prefWidth="77.0" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="operators" text="x^y">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#545454" height="42.77" offsetX="6.0" offsetY="6.0" radius="19.33" width="36.55" />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onOperatorClick" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="operators" text="x!">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#545454" height="42.77" offsetX="6.0" offsetY="6.0" radius="19.33" width="36.55" />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onOperatorClick" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="operators" text="sin(x)">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#545454" height="42.77" offsetX="6.0" offsetY="6.0" radius="19.33" width="36.55" />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onOperatorClick" prefHeight="61.0" prefWidth="87.0" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="operators" text="cos(x)">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#545454" height="42.77" offsetX="6.0" offsetY="6.0" radius="19.33" width="36.55" />
+               </effect>
+            </Button>
+            <Button fx:id="ExEv" mnemonicParsing="false" onAction="#onCEClick" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="specialKeys" text="CE">
+               <font>
+                  <Font name="System Italic" size="25.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#545454" height="42.77" offsetX="6.0" offsetY="6.0" radius="19.33" width="36.55" />
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="13.0" layoutY="314.0" prefHeight="267.0" prefWidth="71.0" style="-fx-spacing: 20;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onOperatorClick" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="operators" text="-">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#615a5aa0" offsetX="6.0" offsetY="5.0" />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onOperatorClick" style="-fx-pref-width: 80; -fx-pref-height: 170; -fx-background-radius: 20;" styleClass="operators" text="+">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#615a5aa0" offsetX="6.0" offsetY="5.0" />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+      <TextField fx:id="resultText" layoutX="161.0" layoutY="611.0" prefHeight="53.0" prefWidth="373.0" style="-fx-background-color: transparent; -fx-text-inner-color: white;" styleClass="backgroundOfCal" stylesheets="@../styles/lightMode.css">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </TextField>
+        <Pane fx:id="topCal" layoutX="19.0" layoutY="-42.0" prefHeight="241.0" prefWidth="534.0" style="-fx-background-radius: 40; -fx-border-color: transparent;" styleClass="topField">
+         <effect>
+            <DropShadow height="45.88" radius="19.5225" width="34.21" />
+         </effect>
+         <children>
+            <VBox layoutX="474.0" layoutY="123.0" prefHeight="68.0" prefWidth="85.0" />
+            <TextArea fx:id="myTextField" layoutX="15.0" layoutY="53.0" prefHeight="150.0" prefWidth="437.0" scrollTop="20.0" style="-fx-border-style: none;" styleClass="topField">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextArea>
+            <Button fx:id="clear" layoutX="453.0" layoutY="83.0" mnemonicParsing="false" onAction="#onDELClick" style="-fx-pref-width: 80; -fx-pref-height: 80; -fx-background-radius: 20;" styleClass="topField" text="⌫" textFill="#787878">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+    </children>
+</Pane>
