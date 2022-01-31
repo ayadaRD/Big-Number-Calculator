@@ -5,3 +5,7 @@ This calculator is for big numbers which cannot be handled by Integer or other d
 <br/><br/>
 ![alt text](https://github.com/ayadaRD/Big-Number-Calculator/blob/master/1.png)
 ![alt text](https://github.com/ayadaRD/Big-Number-Calculator/blob/master/2.png)
+<br/><br/><br/><br/>
+It might be intersting how my GUI was before :)
+<br/><br/>
+![alt text](https://github.com/ayadaRD/Big-Number-Calculator/blob/master/cal.jpg)
